@@ -11,24 +11,30 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping(path = "api/cars")
 public class RentedController {
     @Autowired
     RentedService rentedService;
 
     @PostMapping("/aluguel/{userId}/{carId}")
-    public Rented alugarCarro(@RequestBody Rented rented, @PathVariable Long userId,@PathVariable Long carId){
-        rented.setUser(new User(userId, "", "", "", "",2));
-        rented.setCar(new Car(carId,"", ""));
-        return rentedService.save(rented);
+    public void alugarCarro(@RequestBody Rented rented, @PathVariable Long userId, @PathVariable Long carId) {
+        rented.setUser(new User(userId, "", "", "", "", true,""));
+        rented.setCar(new Car(carId, "", "","Rented"));
+         rentedService.save(rented, userId, carId);
     }
 
     @GetMapping("/alugados")
-    public List show(){
+    public List show() {
         return rentedService.showAll();
     }
 
     @DeleteMapping("/devolvidos/{id}")
-    public ResponseEntity deletar(@PathVariable Long id){
+    public ResponseEntity deletar(@PathVariable Long id) {
         return rentedService.delete(id);
+    }
+    @DeleteMapping("/devolvidos")
+    public void apagar(){
+        rentedService.deleteAll();
     }
 }

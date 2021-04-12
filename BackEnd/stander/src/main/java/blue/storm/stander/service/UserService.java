@@ -10,14 +10,13 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public void registarUser(User user){
+    public void registarUser(User user) {
         userRepository.save(user);
     }
 
-    public User login(String email, String senha){
+    public User login(String email, String senha) {
         return userRepository.findByEmailAndSenha(email, senha);
     }
-
 
 
 }

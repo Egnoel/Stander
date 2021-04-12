@@ -19,5 +19,5 @@ public class Car {
     private Long id;
     private String model;
     private String color;
-
+    private String state ="Available";
 }

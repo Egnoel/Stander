@@ -1,0 +1,25 @@
+<h2 class="text-center">Lista dos Carros!</h2>
+<table class="table table-stripped text-center">
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let car of cars">
+            <td>{{car.model}}</td>
+            <td>{{car.color}}</td>
+            <td>
+                <button (click)="updateCar(car.id)" class="btn btn-info">Update</button>
+                <button (click)="deleteCar(car.id)" class="btn btn-danger" style="margin-left:10px">
+                Delete</button>
+                <button (click)="carDetails(car.id)" class="btn btn-primary" style="margin-left:10px">
+                View</button>
+                <button (click)="rentCar(car.id)" class="btn btn-danger" style="margin-left:10px">
+                Rent</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

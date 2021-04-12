@@ -18,5 +18,5 @@ public class Rented {
     private User user;
     @OneToOne
     private Car car;
-    private String estado;
+
 }

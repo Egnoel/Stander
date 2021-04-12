@@ -13,27 +13,34 @@ public class CarService {
     @Autowired
     private CarRepository carRepository;
 
-    public void AddCar(Car car){
+    public void AddCar(Car car) {
         carRepository.save(car);
     }
 
-    public List<Car> showCar(){
+    public List<Car> showCar() {
         return carRepository.findAll();
     }
 
-    public ResponseEntity updateCar(Long id, Car car){
-      return  carRepository.findById(id)
-                .map(record ->{
+    public ResponseEntity updateCar(Long id, Car car) {
+        return carRepository.findById(id)
+                .map(record -> {
                     record.setColor(car.getColor());
                     record.setModel(car.getModel());
+                    record.setState(car.getState());
                     Car update = carRepository.save(record);
                     return ResponseEntity.ok().body(update);
-        }).orElse(ResponseEntity.notFound().build());
+                }).orElse(ResponseEntity.notFound().build());
     }
 
-    public ResponseEntity deleteCar(Long id){
+   public ResponseEntity getCarById(Long id){
         return carRepository.findById(id)
-                .map(record ->{
+                .map(record ->
+                     ResponseEntity.ok().body(record)
+                ).orElse(ResponseEntity.notFound().build());
+   }
+    public ResponseEntity deleteCar(Long id) {
+        return carRepository.findById(id)
+                .map(record -> {
                     carRepository.deleteById(id);
                     return ResponseEntity.ok().build();
                 }).orElse(ResponseEntity.notFound().build());
