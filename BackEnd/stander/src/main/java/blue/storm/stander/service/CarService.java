@@ -1,6 +1,8 @@
 package blue.storm.stander.service;
 
 import blue.storm.stander.entity.Car;
+import blue.storm.stander.entity.Funcionario;
+import blue.storm.stander.entity.User;
 import blue.storm.stander.repository.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +15,9 @@ public class CarService {
     @Autowired
     private CarRepository carRepository;
 
-    public void AddCar(Car car) {
+    public void AddCar(Car car, Long fId) {
+        User user=new User();
+        car.setFuncionario(new Funcionario(fId,user ));
         carRepository.save(car);
     }
 
@@ -26,7 +30,6 @@ public class CarService {
                 .map(record -> {
                     record.setColor(car.getColor());
                     record.setModel(car.getModel());
-                    record.setState(car.getState());
                     Car update = carRepository.save(record);
                     return ResponseEntity.ok().body(update);
                 }).orElse(ResponseEntity.notFound().build());

@@ -17,9 +17,9 @@ public class CarController {
     @Autowired
     private CarService carService;
 
-    @PostMapping("/add")
-    public void registar(@RequestBody Car car) {
-        carService.AddCar(car);
+    @PostMapping("/add/{fId}")
+    public void registar(@RequestBody Car car, @PathVariable Long fId) {
+        carService.AddCar(car, fId);
     }
 
     @GetMapping

@@ -22,6 +22,5 @@ public class User {
     private String last_name;
     private String email;
     private String senha;
-    private boolean active;
-    private String roles;
+
 }

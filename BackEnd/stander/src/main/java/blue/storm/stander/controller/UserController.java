@@ -5,6 +5,8 @@ import blue.storm.stander.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(path = "/user")
@@ -20,6 +22,11 @@ public class UserController {
     @GetMapping("/login/{email}/{senha}")
     public User login(@PathVariable String email, @PathVariable String senha) {
         return userService.login(email, senha);
+    }
+
+    @GetMapping
+    public List mostrar(){
+        return  userService.mostrar();
     }
 
 }

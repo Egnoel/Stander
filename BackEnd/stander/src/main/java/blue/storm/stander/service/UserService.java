@@ -5,6 +5,8 @@ import blue.storm.stander.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
     @Autowired
@@ -18,5 +20,7 @@ public class UserService {
         return userRepository.findByEmailAndSenha(email, senha);
     }
 
-
+    public List mostrar(){
+       return userRepository.findAll();
+    }
 }

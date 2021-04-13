@@ -18,7 +18,7 @@ public class RentedService {
 
     public void save(Rented rented, Long userId, Long carId) {
 
-        if(rentedRepository.findByUserIdAndCarId(userId,carId).isEmpty()){
+        if(rentedRepository.findByClienteIdAndCarId(userId,carId).isEmpty()){
             rentedRepository.save(rented);
         }
 

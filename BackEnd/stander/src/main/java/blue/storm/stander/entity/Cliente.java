@@ -10,13 +10,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Rented {
+public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @OneToOne
-    private Cliente cliente;
-    @OneToOne
-    private Car car;
+    Long id;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    User user;
 }
