@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -17,4 +18,6 @@ public class Cliente {
 
     @OneToOne(cascade = CascadeType.ALL)
     User user;
+
+
 }

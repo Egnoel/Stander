@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,9 +15,11 @@ public class Rented {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @OneToOne
+
+    @ManyToOne
     private Cliente cliente;
-    @OneToOne
+
+    @ManyToOne
     private Car car;
 
 }

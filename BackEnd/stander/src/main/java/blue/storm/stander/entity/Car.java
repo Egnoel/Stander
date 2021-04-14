@@ -19,4 +19,6 @@ public class Car {
 
     @ManyToOne
     private Funcionario funcionario;
+
+
 }
