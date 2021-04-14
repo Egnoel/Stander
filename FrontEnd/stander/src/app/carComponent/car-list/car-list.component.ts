@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 import {Car} from 'src/app/car';
 import {CarService} from 'src/app/car.service';
+import { Rented } from 'src/app/rented';
 
 @Component({
   selector: 'app-car-list',
@@ -10,11 +11,14 @@ import {CarService} from 'src/app/car.service';
 })
 export class CarListComponent implements OnInit {
   cars!:Car[];
+  rented!:Rented;
 
-  constructor(private carService:CarService, private router:Router) { }
+
+  constructor(private carService:CarService, private router:Router, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getCars();
+    this.rented=new Rented();
   }
 
   private getCars(){
@@ -24,10 +28,18 @@ export class CarListComponent implements OnInit {
   }
 
   carDetails(id:number){
-    this.router.navigate(['car-details',id]) 
+    this.router.navigate(['car-details',id])
   }
 
   rentCar(id:number){
+
+    this.carService.getCarById(id).subscribe(data=>{
+
+      this.rented.car=data;
+    }, error =>console.log(error));
+
+    this.carService.alugar(id, this.rented);
+   // this.router.navigate(['rented-list']);
 
   }
 

@@ -18,7 +18,7 @@ export class CarService {
   }
 
   addCar(car:Car):Observable<Object>{
-    return this.httpClient.post(`${this.baseUrl}/add`,car);
+    return this.httpClient.post(`${this.baseUrl}/add/1`,car);
   }
 
   getRentedList():Observable<Rented[]>{
@@ -40,6 +40,11 @@ export class CarService {
 
   deleteRented(id:number):Observable<Object>{
     return this.httpClient.delete(`${this.baseUrl}/devolvidos/${id}`);
+  }
+
+  alugar(id:number, rented:Rented):Observable<Object>{
+    console.log(`${this.baseUrl}/aluguel/1/${id}`);
+    return this.httpClient.post(`${this.baseUrl}/aluguel/1/${id}`, rented);
   }
 
 }
