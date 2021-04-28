@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="675eff52-b5f9-4ae1-be91-27eaa8cae616" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rMZYWpdXtiyQfeobhAPW67iZCf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBootJwtAuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBootJwtAuthentication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.grokonez.jwtauthentication.SpringBootJwtAuthenticationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="675eff52-b5f9-4ae1-be91-27eaa8cae616" name="Default Changelist" comment="" />
+      <created>1618787967888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618787967888</updated>
+      <workItem from="1618787974867" duration="5417000" />
+      <workItem from="1618824333469" duration="572000" />
+      <workItem from="1618675670134" duration="2132000" />
+      <workItem from="1618910010568" duration="26634000" />
+      <workItem from="1619451539565" duration="2758000" />
+      <workItem from="1619528727223" duration="6442000" />
+      <workItem from="1619541376197" duration="5016000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="370" y="247" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1618789777249">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="370" y="247" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1618789777249" />
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom" timestamp="1619573526917">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1619573526917" />
+    <state width="1237" height="263" key="GridCell.Tab.1.center" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.1.left" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state width="1237" height="263" key="GridCell.Tab.1.right" timestamp="1619573526916">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1619573526916" />
+    <state x="170" y="147" key="Maven.ArtifactSearchDialog" timestamp="1618791876859">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="170" y="147" key="Maven.ArtifactSearchDialog/0.0.1280.984@0.0.1280.984" timestamp="1618791876859" />
+  </component>
+</project>
