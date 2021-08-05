@@ -1,0 +1,12 @@
+.centro{
+    position: absolute;
+    width: 50%;
+    flex: 2;
+    display: flex;
+    margin: 5rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 6;
+    background-color: aliceblue;
+
+}

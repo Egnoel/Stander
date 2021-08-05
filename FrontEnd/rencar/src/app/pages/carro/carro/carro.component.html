@@ -1,0 +1,24 @@
+<a *ngIf="authority === 'admin'" (click)="openDialog()" class="btn btn-success" >Adicionar Carro</a>
+<h2 class="text-center">Lista dos Carros!</h2>
+<table class="table table-stripped text-center">
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let car of cars">
+            <td>{{car.model}}</td>
+            <td>{{car.color}}</td>
+            <td>
+                <button *ngIf="authority === 'admin'" (click)="updateCar(car.id)" class="btn btn-info">Update</button>
+                <button *ngIf="authority === 'admin'" (click)="deleteCar(car.id)" class="btn btn-danger" style="margin-left:10px">
+                Delete</button>
+                <button *ngIf="authority === 'user'" (click)="rentCar(car.id)" class="btn btn-danger" style="margin-left:10px">
+                Rent</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

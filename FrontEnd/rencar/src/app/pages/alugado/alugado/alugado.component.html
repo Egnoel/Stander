@@ -1,0 +1,49 @@
+<div class="container">
+<h2 *ngIf="authority === 'admin'" class="text-center">Lista dos Carros Alugados!</h2>
+<h2 *ngIf="authority === 'user'" class="text-center">Carro Alugado!</h2>
+<table *ngIf="authority === 'admin'" class="table table-stripped text-center">
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let rented of renteds">
+            <td>{{rented.car.model}}</td>
+            <td>{{rented.car.color}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table *ngIf="authority === 'user'" class="table table-stripped text-center">
+  <thead>
+      <tr>
+          <th>Model</th>
+          <th>Color</th>
+          <th>Actions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor = "let rented of renteds">
+          <td>{{rented.car.model}}</td>
+          <td>{{rented.car.color}}</td>
+          <td>
+              <button *ngIf="authority === 'user'" (click)="devolver(rented.id)" class="btn btn-danger" style="margin-left:10px">
+              Retrieve</button>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+</div>

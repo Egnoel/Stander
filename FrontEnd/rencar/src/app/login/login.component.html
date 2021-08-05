@@ -1,0 +1,24 @@
+
+  <div class="principe">
+      <div class= "center">
+          <h1>Entrar</h1>
+          <form #loginForm= "ngForm" (ngSubmit)="entrar()">
+              <small class="text-danger"></small>
+              <div class="txtCampo">
+                  <input type="text" name="nome" [(ngModel)]= "usuario.username" required #nome="ngModel">
+                  <span></span>
+                  <label>Nome de utilizador</label>
+              </div>
+              <small class="text-danger" [class.d-none]="nome.valid || nome.untouched">Email é obrigatório</small>
+              <div class="txtCampo">
+                  <input type="password" name="senha" [(ngModel)]= "usuario.password" required>
+                  <span></span>
+                  <label>Senha</label>
+              </div>
+              <button type="submit" class="btn btn-outline-info">Entrar</button>
+              <div class="esquecer">Esquceu a sua senha?</div>
+          </form>
+      </div>
+    </div>
+
+<router-outlet></router-outlet>
